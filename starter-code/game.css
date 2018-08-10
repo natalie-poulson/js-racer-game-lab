@@ -6,7 +6,7 @@
    License: none (public domain)
 */
 
- html, body, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -51,34 +51,44 @@ table {
 } 
 /* /////////////////////////////////////////////////////////////////////////////////// */
 body {
-    background-color:black;
+    background-color:rgb(247, 240, 243);
 }
-.container {
-    /* width:100vw; */
+body div {
+    height:100vh;
     display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
-.container img {
-    width:75vw;
+#circle1 {
+    background-color:hotpink;
+    width:175px;
+    height:175px;
+    border-radius: 50%;
+    margin:2em;
 }
-button {
-    padding: 2.5em 5em;
+#circle2 {
+    background-color:pink;
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    margin: 7em;
+}
+#circle3 {
+    background-color:red;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
     margin: 1em;
-    font-family:'Press Start 2P', cursive;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    letter-spacing:.5em;
-    color:white;
-    background-color:black;
-    border: .5em solid white;
-    opacity: .2;
-};
-.container button {
-    position: absolute;
-    top:50%;
 }
-.container button:hover {
-    opacity: 1;
+
+.button {
+    position: absolute;
+    top:5%;
+    left: 50%;
+    font-family: Helvetica, sans-serif;
+    font-size: 2em;
+    border-radius: 10%;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding:.5em 1em;
+    border: dashed lightgrey;
+    color:lightgrey;
 }
